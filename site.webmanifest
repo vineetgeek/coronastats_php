@@ -1,0 +1,21 @@
+{
+    "name": "Corona Updates",
+    "short_name": "Corona Updates",
+    "start_url": "/",
+    "theme_color": "#4A90E2",
+    "background_color": "#F7F8F9",
+    "display": "standalone",
+    "orientation": "portrait",
+
+    "icons": [{
+            "src": "corona48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "corona192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ]
+}

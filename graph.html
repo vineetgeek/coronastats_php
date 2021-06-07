@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="virus.png" sizes="16x16">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a42abe6d42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <title>Corona Updates</title>
+
+</head>
+
+
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+        <a class="navbar-brand pl-5" href="index.php">COVID-19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto pr-5">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="https://github.com/vineet9798/corona-.git" target="_blank"><i class="fab fa-github"></i> Contribute</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutid">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dailyid">Daily</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main_header pt-5">
+        <div class="my-5">
+            <h1 class="text-center text-uppercase">let's stay safe and fight against cor<span class="corona_rot"> <img src="coronavirus.png"> </span>na</h1>
+            <h5 class="text-center my-5"><i>Our Data is from multiple sources & we show only the confirmed count & <br>do not update based on rumours. If you are looking for Real-Time count,<br> you are free to also cross check other trackers.</i></h5>
+
+        </div>
+    </div>
+    <br>
+    <div class="text-center">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- corona ad unit -->
+        <ins class="adsbygoogle" style="display:inline-block;width:970px;height:250px" data-ad-client="ca-pub-2309289513710504" data-ad-slot="5733240779"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <div class="container-fluid sub_section pt-5 pb-5" id="aboutid">
+        <div class="section_header text-center mb-5 mt-4">
+            <h1> About COVID-19 </h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 pl-5">
+                <h2>What is COVID-19</h2>
+                <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
+                <p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment. Older people, and those with underlying medical problems like cardiovascular disease, diabetes,
+                    chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+                <p>The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently
+                    and not touching your face. </p>
+                <p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed
+                    elbow).
+                </p>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12 pl-5">
+                <img src="aboutcorona.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+
+    <div class="table">
+        <section class="corona_update">
+
+            <div class="co_head">
+                <h3 class="text-center text-uppercase"> COVID-19 LIVE UPDATES OF THE INDIA </h3>
+            </div>
+            <div class="text-center">
+                <NOBR>
+                    <h8><i>Last Updated Time:</i>
+                        <p id="lastupdatedtime"></p> <i>Refresh </i> <a href="graph.html"><i class="fas fa-sync"></i></a></h8>
+                </NOBR>
+
+            </div>
+
+        </section>
+
+
+
+
+        <div class="container-fluid my=5 pt-5 pb-5">
+            <div class="row text-center">
+                <div class="col-4 text-danger">
+                    <h4>Confirmed</h4>
+                    <p id="confirmed"></p>
+                    <small><i class="fas fa-plus"></i>
+                        <p id="dailyconfirmed"></p>
+                    </small>
+                </div>
+                <div class="col-4 text-success">
+                    <h4>Recovered</h4>
+                    <p id="recovered"></p>
+
+
+                    <small> <i class="fas fa-plus"></i>
+                        <p id="dailyrecovered"></p>
+
+                    </small>
+                </div>
+                <div class="col-4">
+                    <h4>Deceased</h4>
+                    <p id="deaths"></p>
+                    <small><i class="fas fa-plus"></i>
+                        <p id="dailydeaths"></p>
+
+                    </small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid my=5 pt-5 pb-5">
+        <div class="text-center">
+            <a href="index.php"><button type="button" class="btn btn-secondary btn-lg">Tabular</button></a>
+            <a href="graph.html"><button type="button" class="btn btn-primary btn-lg">Graphically</button></a>
+        </div>
+    </div>
+
+    <div class="container text-center my-5">
+        <h6>
+            *Click on Confirmed/Recovered/Deaths below above to see the chart individually*
+        </h6>
+    </div>
+    <canvas id="mychart" height="600" width="800">
+    </canvas>
+
+
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3"> Made with ❤️ in 🇮🇳 by <a href="https://twitter.com/vineet9798">@VineetSrivastav</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <br>
+    <br>
+    <script>
+
+
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+          try {
+             await navigator.serviceWorker.register('./sw.js');
+             } catch (e) {
+           console.log(`SW registration failed`);
+    }
+  }
+}
+    </script>
+
+
+
+
+</body>
+
+</html>
